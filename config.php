@@ -1,6 +1,6 @@
 <?php
 
-$dbms = 'phpbb\\db\\driver\\' . getenv('PHPBB_DB_DRIVER'); // PHPBB_DB_DRIVER="postgres"
+$dbms = 'phpbb\\db\\driver\\' . getenv('PHPBB_DB_DRIVER'); // PHPBB_DB_DRIVER="..."
 $dbhost = getenv('POSTGRESQL_ADDON_HOST'); // PHPBB_DB_HOST="${POSTGRESQL_ADDON_HOST}"
 $dbport = getenv('POSTGRESQL_ADDON_PORT'); // PHPBB_DB_PORT="${POSTGRESQL_ADDON_PORT}"
 $dbname = getenv('POSTGRESQL_ADDON_DB'); // PHPBB_DB_NAME="${POSTGRESQL_ADDON_DB}"
