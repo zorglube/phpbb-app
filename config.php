@@ -12,8 +12,6 @@ $acm_type = 'phpbb\\cache\\driver\\file';
 
 if (getenv('PHPBB_IS_INSTALLED') === 'true') {
 	@define('PHPBB_INSTALLED', true);
-} else {
-	@define('PHPBB_INSTALLED', false);
 }
 
 if (getenv('PHPBB_DISPLAY_LOAD_TIME') === 'true') {
