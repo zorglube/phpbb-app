@@ -10,7 +10,9 @@ $table_prefix = getenv('PHPBB_DB_TABLE_PREFIX'); // PHPBB_DB_TABLE_PREFIX="..."
 $phpbb_adm_relative_path = 'adm/';
 $acm_type = 'phpbb\\cache\\driver\\file';
 
-@define('PHPBB_INSTALLED', true);
+if (getenv('PHPBB_IS_INSTALLED') === 'true') {
+	@define('PHPBB_INSTALLED', true);;
+}
 
 if (getenv('PHPBB_DISPLAY_LOAD_TIME') === 'true') {
 	@define('PHPBB_DISPLAY_LOAD_TIME', true);
