@@ -1,12 +1,12 @@
 <?php
 
-$dbms = 'phpbb\\db\\driver\\' . getenv('PHPBB_DB_DRIVER');
-$dbhost = getenv('PHPBB_DB_HOST');
-$dbport = getenv('PHPBB_DB_PORT');
-$dbname = getenv('PHPBB_DB_NAME');
-$dbuser = getenv('PHPBB_DB_USER');
-$dbpasswd = getenv('PHPBB_DB_PASSWD');
-$table_prefix = getenv('PHPBB_DB_TABLE_PREFIX');
+$dbms = 'phpbb\\db\\driver\\' . getenv('PHPBB_DB_DRIVER'); //// PHPBB_DB_DRIVER="postgres"
+$dbhost = getenv('POSTGRESQL_ADDON_HOST'); // PHPBB_DB_HOST="${POSTGRESQL_ADDON_HOST}"
+$dbport = getenv('POSTGRESQL_ADDON_PORT'); // PHPBB_DB_PORT="${POSTGRESQL_ADDON_PORT}"
+$dbname = getenv('POSTGRESQL_ADDON_DB'); // PHPBB_DB_NAME="${POSTGRESQL_ADDON_DB}"
+$dbuser = getenv('POSTGRESQL_ADDON_USER'); // PHPBB_DB_USER="${POSTGRESQL_ADDON_USER}"
+$dbpasswd = getenv('POSTGRESQL_ADDON_PASSWORD'); // PHPBB_DB_PASSWD="${POSTGRESQL_ADDON_PASSWORD}"
+$table_prefix = getenv('PHPBB_DB_TABLE_PREFIX'); // PHPBB_DB_TABLE_PREFIX="phpbb_"
 $phpbb_adm_relative_path = 'adm/';
 $acm_type = 'phpbb\\cache\\driver\\file';
 
